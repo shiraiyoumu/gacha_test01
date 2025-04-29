@@ -25,7 +25,7 @@ const resultDiv = document.getElementById("result");
 button.addEventListener("click", function() {
     let selectedItems = [];
     let total = 0;
-    const target = 1000;
+    const target = 2000;
     const tolerance = 100;
 
     let shuffledMenu = [...menu].sort(() => 0.5 - Math.random());
