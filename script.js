@@ -11,10 +11,14 @@ const menu = [
     { menu: "相模豚ミックス丼", price:1400 ,shop:"炭火焼我が家のとん丼や" },
     { menu: "スペシャリティコーヒー", price:600 ,shop:"WEEKEND" },
     { menu: "燻製バターのカヌレ", price:700 ,shop:"燻製キッチンKEMUMAKI・KUN" },
-    // { menu: "", price: ,shop:"" },
-    // { menu: "", price: ,shop:"" },
-    // { menu: "", price: ,shop:"" },
-    // { menu: "", price: ,shop:"" },
+    { menu: "魚介豚骨琉球まぜそば", price:1000 ,shop:"M&M" },
+    { menu: "鮭虎丼", price:1800 ,shop:"鮭虎" },
+    { menu: "ネギ塩牛タン丼", price:1200 ,shop:"メディトリーナ" },
+    { menu: "赤ねこコンボ丼", price:1200 ,shop:"赤ねこ" },
+    { menu: "レイソルカリーライス", price:950 ,shop:"日立台カリーぶ" },
+    { menu: "たこザンギ", price:600 ,shop:"小樽飯櫃" },
+    { menu: "チュロス", price:500 ,shop:"Dandy Kitchen" },
+    { menu: "ヘーゼルナッツ香る贅沢チョコバナナクレープ", price:850 ,shop:"ねこもち" },
     // { menu: "", price: ,shop:"" },
     // { menu: "", price: ,shop:"" },
     // { menu: "", price: ,shop:"" },
@@ -30,8 +34,8 @@ const resultDiv = document.getElementById("result");
 button.addEventListener("click", function() {
     let selectedItems = [];
     let total = 0;
-    const target = 3000;
-    const tolerance = 1000;
+    const target = 2000;
+    const tolerance = 500;
 
     let shuffledMenu = [...menu].sort(() => 0.5 - Math.random());
 
