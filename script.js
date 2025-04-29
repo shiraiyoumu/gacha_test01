@@ -2,7 +2,7 @@ const menu = [
     { menu: "シュラスコMIXイチボプレート",price: 1600 ,shop:"Bear's kitchen" },
     { menu: "国産牛100%!!武骨BEEFハンバーグ BENTO", price:1400 ,shop:"BULL`S" },
     { menu: "チャンピオン弁当", price:1700 ,shop:"北海道ジンギスカン Lamb`z" },
-    // { name: "温玉とり天丼", price:950 ,shop:"いちや" },
+    { menu: "温玉とり天丼", price:950 ,shop:"いちや" },
     // // { name: "", price: ,shop:"" },
     // { name: "", price: ,shop:"" },
     // { name: "", price: ,shop:"" },
@@ -46,7 +46,7 @@ button.addEventListener("click", function() {
         let html = "<h2>ガチャ結果🎯</h2><ul>";
         selectedItems.forEach(item => {
             html += `<li>
-                メニュー名：${item.manu}<br>
+                メニュー名：${item.menu}<br>
                 店舗名：${item.shop}<br>
                 金額：${item.price}円
             </li><br>`;
