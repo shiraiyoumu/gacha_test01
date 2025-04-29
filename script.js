@@ -1,11 +1,22 @@
 const menu = [
-    { name: "ミラノ風ドリア", price: 300 },
-    { name: "小エビのサラダ", price: 350 },
-    { name: "辛味チキン", price: 300 },
-    { name: "マルゲリータピザ", price: 500 },
-    { name: "ティラミス", price: 300 },
-    { name: "グラスワイン赤", price: 100 },
-    // 他にも自由に追加してOK
+    { name: "シュラスコMIXイチボプレート", 1600: ,shop:"Bear's kitchen" },
+    { name: "国産牛100%!!武骨BEEFハンバーグ BENTO", price:1400 ,shop:"BULL`S" },
+    { name: "チャンピオン弁当", price:1700 ,shop:"北海道ジンギスカン Lamb`z" },
+    // { name: "温玉とり天丼", price:950 ,shop:"いちや" },
+    // // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+    // { name: "", price: ,shop:"" },
+
 ];
 
 const button = document.getElementById("gacha-button");
@@ -32,9 +43,9 @@ button.addEventListener("click", function() {
     if (selectedItems.length === 0) {
         resultDiv.innerHTML = "ガチャ失敗！もう一回！";
     } else {
-        let html = "<h2>ガチャ結果🎉</h2><ul>";
+        let html = "<h2>ガチャ結果🎯</h2><ul>";
         selectedItems.forEach(item => {
-            html += `<li>${item.name}：${item.price}円</li>`;
+            html += `<li>${item.name}（${item.shop}）：${item.price}円</li>`;
         });
         html += `</ul><p>合計金額：${total}円</p>`;
         resultDiv.innerHTML = html;
